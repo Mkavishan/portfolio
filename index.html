@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Name - Developer Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2D3E50;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #2D3E50;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .about-text {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.7;
+            margin-top: 20px;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .skill {
+            background-color: #1ABC9C;
+            padding: 20px 30px;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill:hover {
+            background-color: #16A085;
+            transform: translateY(-5px);
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .project-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 25px;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-card h3 {
+            font-size: 1.6rem;
+            color: #2D3E50;
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .project-card a {
+            text-decoration: none;
+            color: #1ABC9C;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #2D3E50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .skills {
+                flex-direction: column;
+            }
+
+            .projects {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Your Name</h1>
+    <p>PHP Developer | Laravel | PostgreSQL | AWS</p>
+</header>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p class="about-text">I am a dedicated and passionate web developer with expertise in building scalable and efficient applications. My core skills are in **PHP**, **Laravel**, and **PostgreSQL**, and I am constantly refining my knowledge of **OOP principles** and **software architecture**. I aim to develop systems that are both user-friendly and optimized for performance.</p>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+        <div class="skill">PHP</div>
+        <div class="skill">Laravel</div>
+        <div class="skill">PostgreSQL</div>
+        <div class="skill">AWS</div>
+        <div class="skill">Git</div>
+        <div class="skill">OOP</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <h3>Health-e Pro</h3>
+            <p>Cloud-based menu planning software to aid school nutrition professionals plan nutritious, compliant meals in their schools.</p>
+            <p><strong>Technologies Used:</strong> PHP, Laravel, Vue JS, Boostrap, Tailwind CSS, Elastic search, Nginx, Docker, AWS (S3, EC2, RDS), PHPUnit, BitBucket, PHPStan, ESLint, Typescript, PostgreSQL</p>
+            <p><strong>Challenges:</strong> Ensuring efficient database queries for handling large volumes of task data while maintaining a smooth user experience.</p>
+        </div>
+        <div class="project-card">
+            <h3>My School Menus</h3>
+            <p>Solution to provide students, parents, and school staff with easy access to school meal menus, nutritional information, and meal-related updates. It helps users track daily menus for various schools, and can also offer details about meal plans, ingredients, allergens, and more</p>
+            <p><strong>Technologies Used:</strong> PHP, Laravel, Vue JS, Boostrap, Nginx, Docker, AWS (S3, EC2, RDS), PHPUnit, BitBucket, PHPStan, ESLint, Typescript, PostgreSQL</p>
+            <p><strong>Challenges:</strong> Ensuring efficient database queries for handling large volumes of task data while maintaining a smooth user experience.</p>
+        </div>
+        <div class="project-card">
+            <h3>My School Menu Boards</h3>
+            <p>Offers a simple way for schools to display meal menus using minimal hardware and setup time. The platform integrates seamlessly with systems like Health-e Pro to provide intuitive, easy-to-use menu boards for schools. This helps streamline communication of meal options and nutritional information to students and staff.</p>
+            <p><strong>Technologies Used:</strong> PHP, Laravel, Vue JS, Boostrap, Nginx, Docker, AWS (S3, EC2, RDS), PHPUnit, BitBucket, PHPStan, ESLint, Typescript, PostgreSQL</p>
+            <p><strong>Challenges:</strong> Re-written old Laravel-Anugular setup to latest Laravel 11 and Vue JS 3 within a short time period without compromising quality.</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Your LinkedIn</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
