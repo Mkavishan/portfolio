@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your Name - Developer Portfolio</title>
+    <title>Miyuru Kavishan - Portfolio</title>
     <style>
         * {
             box-sizing: border-box;
@@ -61,20 +61,22 @@
 
         .skills {
             display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
             justify-content: center;
-            gap: 40px;
-            margin-top: 40px;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .skill {
             background-color: #1ABC9C;
-            padding: 20px 30px;
-            border-radius: 30px;
-            font-size: 1.2rem;
-            font-weight: bold;
             color: white;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            min-width: 100px;
+            transition: 0.3s;
         }
 
         .skill:hover {
@@ -110,6 +112,10 @@
             margin-bottom: 15px;
         }
 
+        .project-card h4 {
+            color: #555;
+        }
+
         .project-card p {
             font-size: 1rem;
             color: #555;
@@ -119,6 +125,26 @@
         .project-card a {
             text-decoration: none;
             color: #1ABC9C;
+            font-weight: bold;
+        }
+
+        .project-card ul {
+            list-style-type: none; /* Remove default bullets */
+            padding-left: 0; /* Remove default padding */
+        }
+
+        .project-card ul li {
+            position: relative;
+            margin-bottom: 8px; /* Add spacing between list items */
+        }
+
+        .project-card ul li::before {
+            content: "•"; /* Custom list icon */
+            position: relative;
+            left: auto;
+            padding-right: 5px;
+            top: 2px;
+            color: #000000; /* Adjust color as needed */
             font-weight: bold;
         }
 
@@ -149,13 +175,13 @@
 <body>
 
 <header>
-    <h1>Your Name</h1>
-    <p>PHP Developer | Laravel | PostgreSQL | AWS</p>
+    <h1>Miyuru Kavishan</h1>
+    <p>Software Engineer PHP | Laravel | VueJS | PostgreSQL | AWS</p>
 </header>
 
 <section id="about">
     <h2 class="section-title">About Me</h2>
-    <p class="about-text">I am a dedicated and passionate web developer with expertise in building scalable and efficient applications. My core skills are in **PHP**, **Laravel**, and **PostgreSQL**, and I am constantly refining my knowledge of **OOP principles** and **software architecture**. I aim to develop systems that are both user-friendly and optimized for performance.</p>
+    <p class="about-text">I'm a highly experienced Software Engineer with 8+ years of expertise in Vue.js, RESTful APIs, PHP (Laravel). Skilled in building scalable, high-performance applications with a focus on clean architecture and maintainability. Strong background in designing and optimizing REST APIs, implementing TDD for reliable and efficient code, and developing modern front-end applications using Vue.js and Vuex/Pinia. Passionate about delivering robust solutions that enhance user experience and system performance.</p>
 </section>
 
 <section id="skills">
@@ -163,10 +189,20 @@
     <div class="skills">
         <div class="skill">PHP</div>
         <div class="skill">Laravel</div>
+        <div class="skill">TypesScript</div>
+        <div class="skill">Vue.js</div>
+        <div class="skill">Ract.js</div>
+        <div class="skill">Bootstrap</div>
+        <div class="skill">Tailwind CSS</div>
+        <div class="skill">MySQL</div>
         <div class="skill">PostgreSQL</div>
+        <div class="skill">Elasticsearch</div>
+        <div class="skill">NGINX</div>
         <div class="skill">AWS</div>
-        <div class="skill">Git</div>
-        <div class="skill">OOP</div>
+        <div class="skill">GitHub</div>
+        <div class="skill">Bitbucket</div>
+        <div class="skill">JIRA</div>
+        <div class="skill">Docker</div>
     </div>
 </section>
 
@@ -176,20 +212,156 @@
         <div class="project-card">
             <h3>Health-e Pro</h3>
             <p>Cloud-based menu planning software to aid school nutrition professionals plan nutritious, compliant meals in their schools.</p>
-            <p><strong>Technologies Used:</strong> PHP, Laravel, Vue JS, Boostrap, Tailwind CSS, Elastic search, Nginx, Docker, AWS (S3, EC2, RDS), PHPUnit, BitBucket, PHPStan, ESLint, Typescript, PostgreSQL</p>
-            <p><strong>Challenges:</strong> Ensuring efficient database queries for handling large volumes of task data while maintaining a smooth user experience.</p>
+            <h4>- Technologies Used -</h4>
+            <p>PHP, Laravel, Vue JS, Boostrap, Tailwind CSS, Elastic search, Nginx, Docker, AWS (S3, EC2, RDS), PHPUnit, BitBucket, PHPStan, ESLint, Typescript, PostgreSQL</p>
+            <h4>- Works Done -</h4>
+            <ul>
+                <li>Maintained and enhanced features of an existing project to improve functionality and user experience.</li>
+                <li>Optimized REST APIs to enhance performance, reducing response times and improving overall efficiency.</li>
+                <li>Improved database query performance, resulting in reduced execution times and better handling of large datasets.</li>
+                <li>Increased type safety in the codebase by introducing TypeScript for front-end development and PHPStan for backend analysis.</li>
+                <li>Implemented CI/CD pipeline improvements, automating build, testing, and deployment processes for faster and more reliable releases.</li>
+                <li>Diagnosed and resolved legacy bugs, ensuring a smoother and more stable application experience for users.</li>
+            </ul>
         </div>
         <div class="project-card">
             <h3>My School Menus</h3>
             <p>Solution to provide students, parents, and school staff with easy access to school meal menus, nutritional information, and meal-related updates. It helps users track daily menus for various schools, and can also offer details about meal plans, ingredients, allergens, and more</p>
-            <p><strong>Technologies Used:</strong> PHP, Laravel, Vue JS, Boostrap, Nginx, Docker, AWS (S3, EC2, RDS), PHPUnit, BitBucket, PHPStan, ESLint, Typescript, PostgreSQL</p>
-            <p><strong>Challenges:</strong> Ensuring efficient database queries for handling large volumes of task data while maintaining a smooth user experience.</p>
+            <h4>- Technologies Used -</h4>
+            <p>PHP, Laravel, Vue JS, Boostrap, Nginx, Docker, AWS (S3, EC2, RDS), PHPUnit, BitBucket, PHPStan, ESLint, Typescript, PostgreSQL</p>
+            <h4>- Works Done -</h4>
+            <ul>
+                <li>Maintained an existing project to improve functionality and user experience.</li>
+                <li>Optimized REST APIs to enhance performance, reducing response times and improving overall efficiency.</li>
+                <li>Upgraded the legacy front-end from React to Vue.js 3, seamlessly integrating it with Laravel 11 using an API-driven architecture, ensuring a smooth transition within a tight deadline.</li>
+                <li>Increased type safety in the codebase by introducing TypeScript for front-end development and PHPStan for backend analysis.</li>
+                <li>Implemented CI/CD pipeline improvements, automating build, testing, and deployment processes for faster and more reliable releases.</li>
+                <li>Diagnosed and resolved legacy bugs, ensuring a smoother and more stable application experience for users.</li>
+            </ul>
         </div>
         <div class="project-card">
-            <h3>My School Menu Boards</h3>
+            <h3>My School Menu Board</h3>
             <p>Offers a simple way for schools to display meal menus using minimal hardware and setup time. The platform integrates seamlessly with systems like Health-e Pro to provide intuitive, easy-to-use menu boards for schools. This helps streamline communication of meal options and nutritional information to students and staff.</p>
-            <p><strong>Technologies Used:</strong> PHP, Laravel, Vue JS, Boostrap, Nginx, Docker, AWS (S3, EC2, RDS), PHPUnit, BitBucket, PHPStan, ESLint, Typescript, PostgreSQL</p>
-            <p><strong>Challenges:</strong> Re-written old Laravel-Anugular setup to latest Laravel 11 and Vue JS 3 within a short time period without compromising quality.</p>
+            <h4>- Technologies Used -</h4>
+            <p>PHP, Laravel, Vue JS, Boostrap, Nginx, Docker, AWS (S3, EC2, RDS), PHPUnit, BitBucket, PHPStan, ESLint, Typescript, PostgreSQL</p>
+            <h4>- Works Done -</h4>
+            <ul>
+                <li>Maintained an existing project to improve functionality and user experience.</li>
+                <li>Upgraded the legacy front-end from Angular to Vue.js 3, seamlessly integrating it with Laravel 11 using an API-driven architecture, ensuring a smooth transition within a tight deadline.</li>
+                <li>Increased type safety in the codebase by introducing TypeScript for front-end development and PHPStan for backend analysis.</li>
+                <li>Implemented CI/CD pipeline improvements, automating build, testing, and deployment processes for faster and more reliable releases.</li>
+                <li>Diagnosed and resolved legacy bugs, ensuring a smoother and more stable application experience for users.</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <h3>ActiveBooks</h3>
+            <p>ActiveBooks is an online portal to manage students for private tutors. It is an affordable solution for teachers looking to manage their students with features including classroom scheduling, payment collection, and parent-teacher communications.</p>
+            <h4>- Technologies Used -</h4>
+            <p>PHP, Laravel, React.js, Bootstrap, Nginx, PHPUnit, Bitbucket, MySQL</p>
+            <h4>- Works Done -</h4>
+            <ul>
+                <li>Designed and implemented the system from scratch, ensuring a scalable, efficient, and maintainable architecture that meets business and technical requirements.</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <h3>Aqua Dynamics</h3>
+            <p>Aqua Dynamics (Pvt) Limited is a leading Sri Lankan manufacturer specializing in action sports equipment. Their diverse product range includes surf kites, windsurfing sails, paragliders, yacht sails, tents, and accessories. A custom-developed software solution enables the addition of material details and cost calculations for accessories, tailored to meet specific customer requirements.</p>
+            <h4>- Technologies Used -</h4>
+            <p>PHP, Laravel, Bootstrap, Apache, Bitbucket, MySQL</p>
+            <h4>- Works Done -</h4>
+            <ul>
+                <li>Maintained and enhanced features of an existing project to improve functionality and user experience.</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <h3>Salpo CRM</h3>
+            <p>Salpo CRM is a tool designed to help businesses manage and analyze customer interactions and data throughout the customer lifecycle. It helps improve customer relationships, drive sales growth, and enhance customer satisfaction.</p>
+            <h4>- Technologies Used -</h4>
+            <p>PHP, Symfony, Angular, NodeJS, Bootstrap, Nginx, PHPUnit, Behat, Bitbucket, Redis, Jenkins, AWS, MySQL, MongoDB</p>
+            <h4>- Works Done -</h4>
+            <ul>
+                <li>Enhanced and optimized features of an existing project to boost functionality and improve the overall user experience.</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <h3>MWS (Mobile worker solution)</h3>
+            <p>Mobile Worker Solution is an integrated system designed for companies that need to schedule tasks and track employees working outside the office. Work schedules are created using Salpo CRM, and field-based workers receive assignments directly on their mobile devices through the Salpo Mobile Worker Solution app.</p>
+            <h4>- Technologies Used -</h4>
+            <p>PHP, Symfony, REST API, Nginx, PHPUnit, Bitbucket, Redis, Jenkins, AWS, MySQL</p>
+            <h4>- Works Done -</h4>
+            <ul>
+                <li>Developed and enhanced REST APIs for the existing Salpo CRM, including the integration of new APIs to efficiently track and manage geospatial data. </li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <h3>BRE (Business Rule Engine)</h3>
+            <p>Designed to manage and execute business rules, which consist of logic-based conditions and actions that guide business operations and decision-making. Developed as a microservice, it is integrated seamlessly with Salpo CRM.</p>
+            <h4>- Technologies Used -</h4>
+            <p>PHP, Laravel, REST API, Nginx, PHPUnit, Bitbucket, AWS, MySQL</p>
+            <h4>- Works Done -</h4>
+            <ul>
+                <li>Contributed to the successful implementation of key features, focusing on performance, scalability, and maintainability.</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <h3>EVO (4.0, 4.1) (Pricing tool)</h3>
+            <p>EVO Payments International, LLC, is a prominent provider of merchant acquiring and processing solutions. The current version of Pricing Genie offers a scalable, multi-tenant platform, enabling EVO to deploy custom instances for partners and sales teams as needed. Advanced users can configure custom tariffs, scheme/ITC fees, and assign specific elements to each custom instance. The platform also includes full job functionality, cascading approval permissions, and integrations with ARC, CRM, and SMS systems.</p>
+            <h4>- Technologies Used -</h4>
+            <p>PHP, Laravel, REST API, Nginx, PHPUnit, Bitbucket, AWS, MySQL</p>
+            <h4>- Works Done -</h4>
+            <ul>
+                <li>Played a key role in implementing essential features, with a focus on enhancing performance, scalability, and long-term maintainability.</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <h3>Salpo CRM - Customer Support Project</h3>
+            <p>The Customer Support Project outlines the requirements for a basic support form, enabling customers from C6, EVO, and other custom projects (live or in progress) to submit support tickets, which are then integrated into a Salpo CRM support instance.</p>
+            <h4>- Technologies Used -</h4>
+            <p>PHP, Laravel, REST API, Nginx, PHPUnit, Bitbucket, AWS, MySQL</p>
+            <h4>- Works Done -</h4>
+            <ul>
+                <li>Developed a reporting portal for Salpo CRM incidents, enabling efficient tracking, management, and resolution of system issues.</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <h3>Baas.lk (2nd Year University Group Project)</h3>
+            <p>People living in urban areas often have busy schedules, leaving them with little time to find service providers like carpenters, painters, plumbers, electricians, and more for their daily needs. Baas.lk simplifies this process by helping users quickly and easily find the right service providers. Additionally, users can choose their preferred language (Sinhala, Tamil, or English) for a personalized experience.</p>
+            <h4>- Technologies Used -</h4>
+            <p>PHP, HTML, CSS, Apache, GitHub, MySQL</p>
+            <h4>- Works Done -</h4>
+            <ul>
+                <li>Designed and implemented user interfaces, ensuring a seamless and intuitive user experience while maintaining performance and scalability.</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <h3>Lansu.lk (3rd year University Group Project)</h3>
+            <p>An online bidding platform designed for the Sri Lankan market, allowing users to buy and sell goods. Users can choose their preferred language (Sinhala, Tamil, or English).</p>
+            <h4>- Technologies Used -</h4>
+            <p>PHP, HTML, CSS, Apache, GitHub, MySQL</p>
+            <h4>- Works Done -</h4>
+            <ul>
+                <li>Designed and developed user interfaces, ensuring a smooth and intuitive experience while optimizing for performance and scalability.</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <h3>Scramble Game (Sinhala Version) (3rd Year University)</h3>
+            <p>The Sinhala version of the Scramble Game with a mobile-responsive interface.</p>
+            <h4>- Technologies Used -</h4>
+            <p>PHP, HTML, CSS, Bootstrap, Apache, GitHub</p>
+            <h4>- Works Done -</h4>
+            <ul>
+                <li>Designed and implemented user interfaces, ensuring a seamless and intuitive user experience while maintaining performance and scalability.</li>
+            </ul>
         </div>
     </div>
 </section>
@@ -197,12 +369,12 @@
 
 <section id="contact">
     <h2 class="section-title">Contact</h2>
-    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Your LinkedIn</a></p>
+    <p>Email: <a href="mailto:miyurukavishan@gmail.com">miyurukavishan@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/miyuru-kavishan" target="_blank">Miyuru Kavishan</a></p>
 </section>
 
 <footer>
-    <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    <p>&copy; 2025 Miyuru Kavishan. All Rights Reserved.</p>
 </footer>
 
 </body>
